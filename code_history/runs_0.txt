@@ -429,3 +429,9 @@ execution error: None
 print(sum)
 
 print(Y_hat[Y_hat == 1])
+new run: 1670297392.992413 
+format error: None 
+execution error: None 
+(sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
+
+
