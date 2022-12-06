@@ -1425,3 +1425,13 @@ time_dif = df['CRSArrTime'] - df['CRSDepTime'] - df['CRSElapsedTime']
 time_dif.dropna(inplace = True)
 from scipy.stats import pearsonr
 pearsonr(time_dif,new['DepDel15'])
+new run: 1670310273.662354 
+format error: None 
+execution error: x and y must have the same length. 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+time_dif = df['CRSArrTime'] - df['CRSDepTime'] - df['CRSElapsedTime']
+time_dif.dropna(inplace = True)
+from scipy.stats import pearsonr
+new.shape
+pearsonr(time_dif,new['DepDel15'])
