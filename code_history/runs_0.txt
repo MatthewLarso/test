@@ -2268,3 +2268,7 @@ new run: 1670370393.536126
 format error: None 
 execution error: None 
 Y_test.max()
+new run: 1670370405.2359948 
+format error: None 
+execution error: None 
+accuracy_score(Y_test,Y_hat)
