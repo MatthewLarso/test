@@ -1132,3 +1132,23 @@ DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
 
 new = pd.concat([Origin,Airline,DayOfWeek,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime']], axis = 1)
 new.head()
+new run: 1670308768.931517 
+format error: None 
+execution error: name 'testing' is not defined 
+# new.dropna(inplace = True)
+
+testing.dropna(inplace = True)
+
+X = new.to_numpy()
+Y = new['DepDel15'].to_numpy()
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = LogisticRegression()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_train)
