@@ -2335,3 +2335,10 @@ execution error: 'numpy.ndarray' object has no attribute 'columns'
 # Y = X['DepDel15'].to_numpy()
 # X = scale.fit_transform(X) 
 print(X.columns)
+new run: 1670370893.969543 
+format error: None 
+execution error: 'numpy.ndarray' object has no attribute 'head' 
+# X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+# Y = X['DepDel15'].to_numpy()
+# X = scale.fit_transform(X) 
+print(X.head)
