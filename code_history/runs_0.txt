@@ -62,3 +62,13 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 print(df.head())
+new run: 1670288198.566529 
+format error: unexpected EOF while parsing (1244265679.py, line 6) 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/training.csv')
+print(df.head
