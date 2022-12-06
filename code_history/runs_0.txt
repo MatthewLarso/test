@@ -1627,3 +1627,13 @@ new run: 1670311082.794488
 format error: None 
 execution error: None 
 print(corr_check[abs(corr_check) > .03])
+new run: 1670311162.527487 
+format error: None 
+execution error: None 
+Origin = pd.get_dummies(df['Origin'],drop_first = True)
+DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
+DOT = pd.get_dummies(df['DOT_ID_Operating_Airline'],drop_first = True)
+
+new = pd.concat([Origin,DayOfWeek,DOT,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
+new.dropna(inplace = True)
+new.head()
