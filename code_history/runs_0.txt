@@ -834,3 +834,20 @@ Y = result['DepDel15'].to_numpy()
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+new run: 1670306099.0271602 
+format error: None 
+execution error: None 
+df.dropna(inplace = True)
+result = df.select_dtypes(include='number')
+
+print(result.head())
+cr = result.corr()
+cr = cr[abs(cr["DepDel15"]) > .02]
+print(cr)
+
+X = result[['CRSDepTime','CRSArrTime','OriginAirportID']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
