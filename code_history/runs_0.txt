@@ -718,3 +718,16 @@ ohe = OneHotEncoder(sparse=False)
 
 ohe_airports = ohe.fit_transform(ohe_airports)
 ohe_airports
+new run: 1670301756.646879 
+format error: None 
+execution error: Expected 2D array, got 1D array instead:
+array=[10146 10146 10146 ... 11612 13930 12197].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample. 
+from sklearn.preprocessing import OneHotEncoder
+
+print(df['OriginAirportID'])
+ohe_airports = df['OriginAirportID'].to_numpy()
+ohe = OneHotEncoder(sparse=False)
+
+ohe_airports = ohe.fit_transform(ohe_airports)
+ohe_airports
