@@ -922,3 +922,13 @@ new run: 1670307325.011174
 format error: None 
 execution error: name 'sort' is not defined 
 sort(new.corr()['DepDel15'])
+new run: 1670307743.975432 
+format error: None 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/training.csv')
+print(df.head())
