@@ -2066,3 +2066,10 @@ execution error: array must not contain infs or NaNs
 df.columns
 df['smile'] = df['CRSDepTime'] > 1900
 pearsonr(df['smile'],df['DepDel15'])
+new run: 1670313281.335467 
+format error: None 
+execution error: None 
+df.columns
+df['smile'] = df['CRSDepTime'] > 1900
+df2 = df.dropna()
+pearsonr(df2['smile'],df2['DepDel15'])
