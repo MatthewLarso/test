@@ -2053,3 +2053,10 @@ print(Y_train.max())
 Y_hat.max()
 print(Y_test.sum()/len(Y_test))
 accuracy_score(Y_test,Y_hat)
+new run: 1670312755.671506 
+format error: None 
+execution error: None 
+print(Y_train.max())
+Y_hat.max()
+print(1-(Y_test.sum()/len(Y_test)))
+accuracy_score(Y_test,Y_hat)
