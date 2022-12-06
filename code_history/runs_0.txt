@@ -777,3 +777,7 @@ new run: 1670301935.297358
 format error: None 
 execution error: 'numpy.ndarray' object has no attribute 'corr' 
 ohe_airports.corr(df['DepDel15'])
+new run: 1670301985.997668 
+format error: None 
+execution error: module 'numpy' has no attribute 'corr' 
+np.corr(ohe_airports,df['DepDel15'])
