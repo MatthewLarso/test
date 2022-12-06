@@ -2248,3 +2248,7 @@ new run: 1670369047.311925
 format error: None 
 execution error: None 
 classifier.fit(X_train, Y_train)
+new run: 1670369555.949247 
+format error: None 
+execution error: name 'model' is not defined 
+Y_hat = model.predict(X_test)
