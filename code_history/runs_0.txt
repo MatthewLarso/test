@@ -141,3 +141,12 @@ format error: None
 execution error: None 
 df2 = pd.read_csv('data/testing_X.csv')
 df2.head()
+new run: 1670289804.599405 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = df.corr()
+cr = cr[cr["DepDel15"] > .05]
+cr
+X = result[['CRSArrTime','CRSDepTime']]
