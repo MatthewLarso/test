@@ -1474,3 +1474,12 @@ time_dif.dropna(inplace = True)
 from scipy.stats import pearsonr
 print(df.shape)
 pearsonr(time_dif,new['DepDel15'])
+new run: 1670310366.635169 
+format error: None 
+execution error: array must not contain infs or NaNs 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+time_dif = new['CRSArrTime'] - new['CRSDepTime'] - new['CRSElapsedTime']
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(time_dif,new['DepDel15'])
