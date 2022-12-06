@@ -909,3 +909,12 @@ execution error: None
 testing = pd.get_dummies(df['Origin'],drop_first = True)
 testing
 print(df.columns)
+new run: 1670307294.894651 
+format error: None 
+execution error: None 
+Origin = pd.get_dummies(df['Origin'],drop_first = True)
+Airline = pd.get_dummies(df['Airline'],drop_first = True)
+DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
+
+new = pd.concat([Origin,Airline,DayOfWeek,df['DepDel15']], axis = 1)
+new.head()
