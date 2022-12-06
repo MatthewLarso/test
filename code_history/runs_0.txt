@@ -1644,3 +1644,10 @@ new2 = new.sample(n = 100000)
 corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
 corr_check.dropna(inplace = True)
 print(corr_check[corr_check > .03])
+new run: 1670311343.8491662 
+format error: None 
+execution error: None 
+new2 = new.sample(n = 100000)
+corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
+corr_check.dropna(inplace = True)
+print(corr_check[abs(corr_check) > .03])
