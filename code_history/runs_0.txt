@@ -1696,3 +1696,12 @@ good = new[19930] | new[19690] | new[19790]
 from scipy.stats import pearsonr
 print(df.shape)
 pearsonr(bad,new['DepDel15'])
+new run: 1670311516.2767081 
+format error: None 
+execution error: None 
+
+bad = new[20409] | new[20436] | new['MDW']
+good = new[19930] | new[19690] | new[19790]
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(good,new['DepDel15'])
