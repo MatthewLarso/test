@@ -1455,3 +1455,12 @@ time_dif.dropna(inplace = True)
 from scipy.stats import pearsonr
 print(df.shape)
 pearsonr(time_dif,new['DepDel15'])
+new run: 1670310347.618151 
+format error: None 
+execution error: None 
+Origin = pd.get_dummies(df['Origin'],drop_first = True)
+Airline = pd.get_dummies(df['Airline'],drop_first = True)
+DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
+
+new = pd.concat([Origin,Airline,DayOfWeek,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
+new.head()
