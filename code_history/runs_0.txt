@@ -2342,3 +2342,11 @@ execution error: 'numpy.ndarray' object has no attribute 'head'
 # Y = X['DepDel15'].to_numpy()
 # X = scale.fit_transform(X) 
 print(X.head)
+new run: 1670370920.064702 
+format error: None 
+execution error: None 
+X2 = new[new['DepDel15'] == 0]
+X3 = new[new['DepDel15'] == 1]
+X2 = X2.sample(n = 10000)
+X3 = X3.sample(n = 10000)
+X = pd.concat([X2,X3])
