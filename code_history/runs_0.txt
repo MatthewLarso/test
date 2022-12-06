@@ -1391,3 +1391,10 @@ bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Air
 good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
 from scipy.stats import pearsonr
 pearsonr(bad,new['DepDel15'])
+new run: 1670310121.33424 
+format error: None 
+execution error: None 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+from scipy.stats import pearsonr
+pearsonr(good,new['DepDel15'])
