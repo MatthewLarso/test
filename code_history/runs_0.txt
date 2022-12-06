@@ -613,3 +613,10 @@ execution error: None
 filtered = df.select_dtypes(include='number') 
 filtered.columns
 filtered.corr()
+new run: 1670299145.058828 
+format error: None 
+execution error: "['Year'] not found in axis" 
+filtered = df.select_dtypes(include='number') 
+filtered.drop(index = "Year",inplace = True)
+filtered.columns
+filtered.corr()
