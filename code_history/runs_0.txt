@@ -1572,3 +1572,14 @@ new run: 1670310588.149206
 format error: None 
 execution error: None 
 df.columns
+new run: 1670310703.176043 
+format error: None 
+execution error: None 
+
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(time_dif,new['DepDel15'])
+new['CRSArrTime'][0]
+type(corr_check[corr_check > 0])
