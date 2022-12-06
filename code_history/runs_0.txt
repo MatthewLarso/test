@@ -1398,3 +1398,12 @@ bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Air
 good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
 from scipy.stats import pearsonr
 pearsonr(good,new['DepDel15'])
+new run: 1670310209.6345868 
+format error: None 
+execution error: x and y must have the same length. 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+time_dif = df['CRSArrTime'] - df['CRSDepTime'] - df['CRSElapsedTime']
+
+from scipy.stats import pearsonr
+pearsonr(time_dif,new['DepDel15'])
