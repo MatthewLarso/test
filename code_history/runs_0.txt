@@ -1913,3 +1913,22 @@ format error: None
 execution error: None 
 print(Y_test.max())
 Y_hat.max()
+new run: 1670312125.2879858 
+format error: None 
+execution error: None 
+new['bad'] = bad
+new['good'] = good
+new2 = new.sample(n = 10000)
+X = new2[['bad','good']].to_numpy()
+Y = new2['DepDel15'].to_numpy()
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_train)
