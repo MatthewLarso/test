@@ -796,3 +796,10 @@ execution error: None
 # np.corrcoef(ohe_airports,df['DepDel15'])
 ohe_airports.shape
 df['DepDel15'].shape
+new run: 1670302254.4637141 
+format error: None 
+execution error: Expected a 1D array, got an array with shape (5602912, 370) 
+# np.corrcoef(ohe_airports,df['DepDel15'])
+ohe_airports.shape
+filtered["OHE"] = ohe_airports
+filtered.corr()
