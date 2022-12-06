@@ -2034,3 +2034,9 @@ model = LogisticRegression()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670312703.39969 
+format error: None 
+execution error: Found input variables with inconsistent numbers of samples: [3753963, 1848968] 
+print(Y_train.max())
+Y_hat.max()
+accuracy_score(Y_train,Y_hat)
