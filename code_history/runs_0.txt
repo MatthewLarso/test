@@ -600,3 +600,10 @@ filtered = df.select_dtypes(include='number')
 filtered.drop(["Year"],inplace = True)
 filtered.columns
 filtered.corr()
+new run: 1670299108.950428 
+format error: None 
+execution error: "['Year'] not found in axis" 
+filtered = df.select_dtypes(include='number') 
+filtered.drop(index = "Year",inplace = True)
+filtered.columns
+filtered.corr()
