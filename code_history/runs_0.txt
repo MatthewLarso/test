@@ -1739,3 +1739,20 @@ model = SVC()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670311661.220852 
+format error: None 
+execution error: first argument must be an iterable of pandas objects, you passed an object of type "Series" 
+new2 = new.sample(n = 1000)
+X = pd.concat(new2['CRSArrTime'],new2['CRSDepTime'],bad,good)
+Y = new2['DepDel15'].to_numpy()
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
