@@ -136,3 +136,8 @@ print(result.head())
 cr = result.corr()
 cr = cr[cr["DepDel15"] > .05]
 cr
+new run: 1670289679.654855 
+format error: None 
+execution error: None 
+df2 = pd.read_csv('data/testing_X.csv')
+df2.head()
