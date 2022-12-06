@@ -790,3 +790,9 @@ format error: None
 execution error: None 
 # np.corrcoef(ohe_airports,df['DepDel15'])
 ohe_airports.shape
+new run: 1670302053.188035 
+format error: None 
+execution error: None 
+# np.corrcoef(ohe_airports,df['DepDel15'])
+ohe_airports.shape
+df['DepDel15'].shape
