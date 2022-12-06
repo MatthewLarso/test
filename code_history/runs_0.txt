@@ -803,3 +803,17 @@ execution error: Expected a 1D array, got an array with shape (5602912, 370)
 ohe_airports.shape
 filtered["OHE"] = ohe_airports
 filtered.corr()
+new run: 1670303865.435792 
+format error: None 
+execution error: None 
+# np.corrcoef(ohe_airports,df['DepDel15'])
+ohe_airports.shape
+X = ohe_airports
+Y = filtered['DepDel15'].to_numpy()
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+# print(len(X_train))
+model = LogisticRegression()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_train)
