@@ -1378,3 +1378,9 @@ execution error: 'DepDel15l15'
 bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
 from scipy.stats import pearsonr
 pearsonr(bad,new['DepDel15l15'])
+new run: 1670310077.904157 
+format error: None 
+execution error: None 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+from scipy.stats import pearsonr
+pearsonr(bad,new['DepDel15'])
