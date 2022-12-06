@@ -5,3 +5,12 @@ execution error: None
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+new run: 1670288099.883019 
+format error: None 
+execution error: name 'training' is not defined 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv(training.csv)
