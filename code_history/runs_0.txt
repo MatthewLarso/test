@@ -971,3 +971,7 @@ new run: 1670308030.794398
 format error: None 
 execution error: None 
 print(corr_check[abs(corr_check)> .3])
+new run: 1670308052.0902212 
+format error: None 
+execution error: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all(). 
+print(corr_check[(corr_check)> .3 or corr_check < -.3])
