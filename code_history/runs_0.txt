@@ -1616,3 +1616,10 @@ DOT = pd.get_dummies(df['DOT_ID_Operating_Airline'],drop_first = True)
 new = pd.concat([Origin,Airline,DayOfWeek,DOT,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
 new.dropna(inplace = True)
 new.head()
+new run: 1670311071.212068 
+format error: None 
+execution error: None 
+new2 = new.sample(n = 10000)
+corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
+corr_check.dropna(inplace = True)
+print(corr_check[corr_check > .05])
