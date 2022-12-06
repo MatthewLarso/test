@@ -2316,3 +2316,9 @@ new run: 1670370784.142022
 format error: None 
 execution error: None 
 X.shape
+new run: 1670370832.581503 
+format error: None 
+execution error: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices 
+X  = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y = X['DepDel15'].to_numpy()
+X = scale.fit_transform(X) 
