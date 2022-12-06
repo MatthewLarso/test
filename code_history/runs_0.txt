@@ -1980,3 +1980,8 @@ model = LogisticRegression()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_train)
+new run: 1670312330.880406 
+format error: None 
+execution error: None 
+print(Y_train.max())
+Y_hat.max()
