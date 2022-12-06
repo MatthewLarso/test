@@ -122,3 +122,9 @@ format error: None
 execution error: None 
 result = df.select_dtypes(include='number')
 result.corr()
+new run: 1670289444.333642 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+result.corr()
