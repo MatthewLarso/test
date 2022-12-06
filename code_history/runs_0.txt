@@ -2189,3 +2189,13 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 print(df.head())
+new run: 1670366979.529197 
+format error: None 
+execution error: None 
+Origin = pd.get_dummies(df['Origin'],drop_first = True)
+DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
+DOT = pd.get_dummies(df['DOT_ID_Operating_Airline'],drop_first = True)
+
+new = pd.concat([Origin,DayOfWeek,DOT,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
+new.dropna(inplace = True)
+new.head()
