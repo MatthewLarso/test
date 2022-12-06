@@ -2040,3 +2040,9 @@ execution error: Found input variables with inconsistent numbers of samples: [37
 print(Y_train.max())
 Y_hat.max()
 accuracy_score(Y_train,Y_hat)
+new run: 1670312712.00564 
+format error: None 
+execution error: None 
+print(Y_train.max())
+Y_hat.max()
+accuracy_score(Y_test,Y_hat)
