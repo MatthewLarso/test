@@ -459,3 +459,15 @@ execution error: None
 # (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
 
 Y_hat.max()
+new run: 1670297555.532968 
+format error: None 
+execution error: name 'Svn' is not defined 
+from sklearn.linear_model import LogisticRegression
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+print(len(X_train))
+model = Svn()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_train)
