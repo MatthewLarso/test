@@ -1832,3 +1832,22 @@ model = SVC()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670311892.20419 
+format error: None 
+execution error: None 
+new2 = pd.concat([new,bad,good],axis = 1).sample(n = 1000)
+X = pd.concat([new2['CRSArrTime'],new2['CRSDepTime'],new2[0],new2[1]],axis = 1)
+Y = new2['DepDel15'].to_numpy()
+
+print(X.shape)
+print(Y.shape)
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
