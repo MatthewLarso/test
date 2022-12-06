@@ -983,3 +983,7 @@ new run: 1670308077.629547
 format error: None 
 execution error: None 
 print(corr_check[(corr_check> .3) | (corr_check < -.3)])
+new run: 1670308092.6243358 
+format error: None 
+execution error: None 
+print(corr_check[(corr_check> .03) | (corr_check < -.03)])
