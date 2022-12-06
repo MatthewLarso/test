@@ -898,3 +898,8 @@ format error: None
 execution error: 'DataFrame' object has no attribute 'get_dummies' 
 testing = df.get_dummies(df['Origin'],drop_first = True)
 testing
+new run: 1670307074.320588 
+format error: None 
+execution error: None 
+testing = pd.get_dummies(df['Origin'],drop_first = True)
+testing
