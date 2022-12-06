@@ -113,3 +113,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 print(df.head())
+new run: 1670288644.172656 
+format error: None 
+execution error: None 
+df.corr()
