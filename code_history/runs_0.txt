@@ -762,3 +762,14 @@ ohe = OneHotEncoder(sparse=False)
 
 ohe_airports = ohe.fit_transform(ohe_airports.reshape(-1,1))
 print(ohe_airports)
+new run: 1670301846.658766 
+format error: None 
+execution error: None 
+from sklearn.preprocessing import OneHotEncoder
+
+ohe_airports = df['OriginAirportID'].to_numpy()
+ohe = OneHotEncoder(sparse=False)
+
+ohe_airports = ohe.fit_transform(ohe_airports.reshape(-1,1))
+print(ohe_airports)
+print(ohe_airports[0])
