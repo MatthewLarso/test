@@ -92,3 +92,14 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 print(df.head)
+new run: 1670288269.8651142 
+format error: None 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+print("hi")
+df = pd.read_csv('data/training.csv')
+print(df.head())
