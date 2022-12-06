@@ -676,3 +676,13 @@ filtered.drop(columns = "Year",inplace = True)
 # filtered.columns
 filtered['Delay'] = filtered['CRSElapsedTime'] - (filtered['CRSArrTime'] - filtered['CRSArrTime'])
 filtered.corr()
+new run: 1670301671.502723 
+format error: None 
+execution error: name 'df1' is not defined 
+from sklearn.preprocessing import OneHotEncoder
+
+ohe_airports = df1[['OriginAiportID']].to_numpy()
+ohe = OneHotEncoder(sparse=False)
+
+ohe_airports = ohe.fit_transform(ohe_airports)
+ohe_airports
