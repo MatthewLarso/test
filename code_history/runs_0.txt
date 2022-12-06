@@ -941,3 +941,8 @@ DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
 
 new = pd.concat([Origin,Airline,DayOfWeek,df['DepDel15']], axis = 1)
 new.head()
+new run: 1670307797.0935402 
+format error: None 
+execution error: None 
+new2 = new.sample(n = 1000)
+(new2.corr()['DepDel15']).sort_values(ascending = False)
