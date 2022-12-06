@@ -410,3 +410,8 @@ new run: 1670297295.1103702
 format error: None 
 execution error: None 
 (sum(Y_test) - sum(Y_hat))/len(Y_test)
+new run: 1670297349.988244 
+format error: None 
+execution error: None 
+(sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
+print(sum)
