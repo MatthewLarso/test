@@ -773,3 +773,7 @@ ohe = OneHotEncoder(sparse=False)
 ohe_airports = ohe.fit_transform(ohe_airports.reshape(-1,1))
 print(ohe_airports)
 print(ohe_airports[0])
+new run: 1670301935.297358 
+format error: None 
+execution error: 'numpy.ndarray' object has no attribute 'corr' 
+ohe_airports.corr(df['DepDel15'])
