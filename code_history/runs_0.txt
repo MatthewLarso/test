@@ -2328,3 +2328,10 @@ execution error: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`
 X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
 Y = X['DepDel15'].to_numpy()
 X = scale.fit_transform(X) 
+new run: 1670370871.475093 
+format error: None 
+execution error: 'numpy.ndarray' object has no attribute 'columns' 
+# X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+# Y = X['DepDel15'].to_numpy()
+# X = scale.fit_transform(X) 
+print(X.columns)
