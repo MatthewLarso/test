@@ -2292,3 +2292,7 @@ new run: 1670370685.0913222
 format error: None 
 execution error: None 
 X.shape
+new run: 1670370688.5373921 
+format error: None 
+execution error: 'tuple' object is not callable 
+X.shape()
