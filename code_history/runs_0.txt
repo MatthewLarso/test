@@ -781,3 +781,7 @@ new run: 1670301985.997668
 format error: None 
 execution error: module 'numpy' has no attribute 'corr' 
 np.corr(ohe_airports,df['DepDel15'])
+new run: 1670302016.667825 
+format error: None 
+execution error: all the input array dimensions for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 370 and the array at index 1 has size 5602912 
+np.corrcoef(ohe_airports,df['DepDel15'])
