@@ -117,3 +117,8 @@ new run: 1670288644.172656
 format error: None 
 execution error: None 
 df.corr()
+new run: 1670289423.177207 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+result.corr()
