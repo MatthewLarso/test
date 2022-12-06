@@ -2060,3 +2060,9 @@ print(Y_train.max())
 Y_hat.max()
 print(1-(Y_test.sum()/len(Y_test)))
 accuracy_score(Y_test,Y_hat)
+new run: 1670313246.850183 
+format error: None 
+execution error: array must not contain infs or NaNs 
+df.columns
+df['smile'] = df['CRSDepTime'] > 1900
+pearsonr(df['smile'],df['DepDel15'])
