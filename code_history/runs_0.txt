@@ -580,3 +580,9 @@ format error: None
 execution error: None 
 filtered = df.select_dtypes(include='number') 
 filtered.columns
+new run: 1670298980.826483 
+format error: None 
+execution error: None 
+filtered = df.select_dtypes(include='number') 
+filtered.columns
+filtered.corr()
