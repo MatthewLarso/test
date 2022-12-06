@@ -2272,3 +2272,7 @@ new run: 1670370405.2359948
 format error: None 
 execution error: None 
 accuracy_score(Y_test,Y_hat)
+new run: 1670370424.3198268 
+format error: None 
+execution error: None 
+Y_test.sum()
