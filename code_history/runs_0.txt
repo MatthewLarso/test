@@ -893,3 +893,8 @@ execution error: None
 # (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
 print(len(Y_train[Y_train == 0]))
 len(Y_train[Y_train == 1])/(len(Y_train[Y_train == 1]) + len(Y_train[Y_train == 0]))
+new run: 1670307019.7718 
+format error: None 
+execution error: 'DataFrame' object has no attribute 'get_dummies' 
+testing = df.get_dummies(df['Origin'],drop_first = True)
+testing
