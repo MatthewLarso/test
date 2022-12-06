@@ -2296,3 +2296,11 @@ new run: 1670370688.5373921
 format error: None 
 execution error: 'tuple' object is not callable 
 X.shape()
+new run: 1670370725.849327 
+format error: None 
+execution error: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame" 
+X2 = new[new['DepDel15'] == 0]
+X3 = new[new['DepDel15'] == 1]
+X2 = X2.sample(n = 10000)
+X3 = X3.sample(n = 10000)
+X = pd.concat(X2,X3)
