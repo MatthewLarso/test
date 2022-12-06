@@ -2402,3 +2402,8 @@ execution error: None
 Y = X['DepDel15'].to_numpy()
 X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
 X = scale.fit_transform(X) 
+new run: 1670370993.774379 
+format error: None 
+execution error: None 
+classifier = MLPClassifier(hidden_layer_sizes=(150,100,50), max_iter=300,activation = 'relu',solver='adam',random_state=1)
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
