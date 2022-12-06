@@ -333,3 +333,7 @@ new run: 1670291864.531351
 format error: None 
 execution error: None 
 print(len(X[0]))
+new run: 1670291869.999645 
+format error: None 
+execution error: None 
+print(X)
