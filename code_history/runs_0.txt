@@ -1361,3 +1361,10 @@ new run: 1670309743.662355
 format error: None 
 execution error: None 
 Y_hat.sum()-Y_test.sum()
+new run: 1670309813.831407 
+format error: None 
+execution error: None 
+new2 = new.sample(n = 100000)
+corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
+corr_check.dropna(inplace = True)
+print(corr_check[corr_check > .05])
