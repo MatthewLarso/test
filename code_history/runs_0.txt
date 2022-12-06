@@ -366,3 +366,12 @@ from sklearn.metrics import accuracy_score
 #classification models will automatically take care of one-versus-all modeling
 
 print(df.shape)
+new run: 1670295351.522038 
+format error: None 
+execution error: name 'LogisticRegression' is not defined 
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = LogisticRegression()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
