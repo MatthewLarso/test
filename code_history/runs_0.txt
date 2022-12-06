@@ -1651,3 +1651,12 @@ new2 = new.sample(n = 100000)
 corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
 corr_check.dropna(inplace = True)
 print(corr_check[abs(corr_check) > .03])
+new run: 1670311446.506649 
+format error: None 
+execution error: '20409' 
+
+bad = new['20409'] | new['20436'] | new['MDW']
+good = new['19930'] | new['19690'] | new['19790']
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(bad,new['DepDel15'])
