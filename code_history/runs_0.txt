@@ -2208,3 +2208,11 @@ good = new[19930] | new[19690] | new[19790]
 from scipy.stats import pearsonr
 print(df.shape)
 pearsonr(good,new['DepDel15'])
+new run: 1670367080.1478589 
+format error: None 
+execution error: None 
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
