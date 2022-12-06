@@ -42,3 +42,13 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 df.head()
+new run: 1670288196.450737 
+format error: None 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/training.csv')
+df.head()
