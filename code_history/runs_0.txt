@@ -2152,3 +2152,12 @@ df['smile2'] = df['CRSArrTime'] > 1800
 df['smile3'] = df['smile'] | df['smile2']
 df2 = df.dropna()
 pearsonr(df2['smile2'],df2['DepDel15'])
+new run: 1670313933.4302459 
+format error: None 
+execution error: None 
+df.columns
+df['smile'] = df['CRSDepTime'] > 1000
+df['smile2'] = df['CRSArrTime'] > 1600
+df['smile3'] = df['smile'] | df['smile2']
+df2 = df.dropna()
+pearsonr(df2['smile2'],df2['DepDel15'])
