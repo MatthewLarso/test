@@ -521,3 +521,19 @@ execution error: None
 # (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
 
 Y_hat
+new run: 1670298079.065668 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = df.corr()
+cr = cr[cr["DepDel15"] > .02]
+print(cr)
+result.dropna(inplace = True)
+X = result[['CRSDepTime','CRSArrTime']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+print(df.shape)
