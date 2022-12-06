@@ -337,3 +337,13 @@ new run: 1670291869.999645
 format error: None 
 execution error: None 
 print(X)
+new run: 1670295309.470051 
+format error: None 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/training.csv')
+print(df.head())
