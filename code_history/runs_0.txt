@@ -272,3 +272,27 @@ model = SVC()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670290829.4245288 
+format error: None 
+execution error: dropna() got an unexpected keyword argument 'in_place' 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = result.corr()
+cr = cr[cr["DepDel15"] > .05]
+print(cr)
+result.dropna(in_place = True)
+X = result[['CRSArrTime','CRSDepTime']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+#classification models will automatically take care of one-versus-all modeling
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
