@@ -1464,3 +1464,13 @@ DayOfWeek = pd.get_dummies(df['DayOfWeek'],drop_first = True)
 
 new = pd.concat([Origin,Airline,DayOfWeek,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
 new.head()
+new run: 1670310360.910492 
+format error: None 
+execution error: x and y must have the same length. 
+bad = new['Southwest Airlines Co.'] | new['JetBlue Airways'] | new['Frontier Airlines Inc.'] | new['MDW']
+good = new['Alaska Airlines Inc.'] | new['Hawaiian Airlines Inc.'] | new['Delta Air Lines Inc.']
+time_dif = new['CRSArrTime'] - new['CRSDepTime'] - new['CRSElapsedTime']
+time_dif.dropna(inplace = True)
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(time_dif,new['DepDel15'])
