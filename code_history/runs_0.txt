@@ -150,3 +150,12 @@ cr = df.corr()
 cr = cr[cr["DepDel15"] > .05]
 cr
 X = result[['CRSArrTime','CRSDepTime']]
+new run: 1670289819.771792 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = df.corr()
+cr = cr[cr["DepDel15"] > .05]
+print(cr)
+X = result[['CRSArrTime','CRSDepTime']]
