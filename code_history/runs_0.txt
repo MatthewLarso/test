@@ -471,3 +471,13 @@ model = Svn()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_train)
+new run: 1670297767.797178 
+format error: None 
+execution error: None 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/training.csv')
+print(df.head())
