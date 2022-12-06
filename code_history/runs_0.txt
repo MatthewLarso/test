@@ -509,3 +509,9 @@ model = LogisticRegression()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_train)
+new run: 1670297865.16106 
+format error: None 
+execution error: None 
+# (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
+
+Y_hat.max()
