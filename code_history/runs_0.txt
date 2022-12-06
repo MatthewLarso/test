@@ -406,3 +406,7 @@ new run: 1670297258.2139452
 format error: None 
 execution error: None 
 max(Y_test)
+new run: 1670297295.1103702 
+format error: None 
+execution error: None 
+(sum(Y_test) - sum(Y_hat))/len(Y_test)
