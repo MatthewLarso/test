@@ -180,3 +180,25 @@ model = SVC()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670290632.417881 
+format error: None 
+execution error: cannot import name 'accuracy_score' from 'sklearn.model_selection' (/Users/matthewlarson/Library/Python/3.9/lib/python/site-packages/sklearn/model_selection/__init__.py) 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = result.corr()
+cr = cr[cr["DepDel15"] > .05]
+print(cr)
+X = result[['CRSArrTime','CRSDepTime']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+from sklearn.model_selection import accuracy_score, train_test_split
+
+#classification models will automatically take care of one-versus-all modeling
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
