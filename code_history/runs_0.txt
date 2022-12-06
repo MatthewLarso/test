@@ -128,3 +128,11 @@ execution error: None
 result = df.select_dtypes(include='number')
 print(result.head())
 result.corr()
+new run: 1670289571.259289 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = result.corr()
+cr = cr[cr["DepDel15"] > .05]
+cr
