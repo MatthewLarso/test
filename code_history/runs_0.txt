@@ -2009,3 +2009,9 @@ format error: None
 execution error: None 
 print(Y_train.max())
 Y_hat.max()
+new run: 1670312582.91013 
+format error: None 
+execution error: None 
+print(Y_train.max())
+Y_hat.max()
+accuracy_score(Y_train,Y_hat)
