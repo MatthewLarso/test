@@ -651,3 +651,11 @@ filtered.drop(columns = "Year",inplace = True)
 # filtered.columns
 filtered['Delay'] = filtered['CRSElapsedTime'] - (filtered['CRSArrTime'] - filtered['CRSArrTime'])
 filtered.corr()
+new run: 1670299498.688907 
+format error: None 
+execution error: None 
+filtered = df.select_dtypes(include='number') 
+filtered.drop(columns = "Year",inplace = True)
+# filtered.columns
+filtered['Delay'] = (filtered['CRSArrTime'] - filtered['CRSArrTime']) - filtered['CRSElapsedTime'] > 5
+filtered.corr()
