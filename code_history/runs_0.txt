@@ -1872,3 +1872,7 @@ model = SVC()
 model.fit(X_train,Y_train)
 
 Y_hat = model.predict(X_test)
+new run: 1670312016.1012878 
+format error: None 
+execution error: None 
+Y_train.max
