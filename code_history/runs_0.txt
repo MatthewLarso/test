@@ -975,3 +975,7 @@ new run: 1670308052.0902212
 format error: None 
 execution error: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all(). 
 print(corr_check[(corr_check)> .3 or corr_check < -.3])
+new run: 1670308056.974415 
+format error: None 
+execution error: Cannot perform 'ror_' with a dtyped [float64] array and scalar of type [bool] 
+print(corr_check[(corr_check)> .3 | corr_check < -.3])
