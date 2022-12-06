@@ -515,3 +515,9 @@ execution error: None
 # (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
 
 Y_hat.max()
+new run: 1670297870.224236 
+format error: None 
+execution error: None 
+# (sum(Y_test) - sum(Y_hat))/len(Y_test[Y_test == 1])
+
+Y_hat
