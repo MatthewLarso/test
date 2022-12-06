@@ -951,3 +951,8 @@ format error: None
 execution error: None 
 new2 = new.sample(n = 10000)
 corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
+new run: 1670307833.9558861 
+format error: None 
+execution error: None 
+new2 = new.sample(n = 10000)
+corr_check = (new2.corr()['DepDel15']).sort_values(ascending = False)
