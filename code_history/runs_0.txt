@@ -2225,3 +2225,13 @@ scale= StandardScaler()
 X = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
 Y = new['DepDel15'].to_numpy()
 X = scale.fit_transform(X) 
+new run: 1670367163.265903 
+format error: None 
+execution error: None 
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.neural_network import MLPClassifier
+
