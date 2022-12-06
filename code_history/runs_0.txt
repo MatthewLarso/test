@@ -2199,3 +2199,12 @@ DOT = pd.get_dummies(df['DOT_ID_Operating_Airline'],drop_first = True)
 new = pd.concat([Origin,DayOfWeek,DOT,df['DepDel15'],df['CRSDepTime'],df['CRSArrTime'],df['CRSElapsedTime']], axis = 1)
 new.dropna(inplace = True)
 new.head()
+new run: 1670367019.870024 
+format error: None 
+execution error: None 
+
+bad = new[20409] | new[20436] | new['MDW']
+good = new[19930] | new[19690] | new[19790]
+from scipy.stats import pearsonr
+print(df.shape)
+pearsonr(good,new['DepDel15'])
