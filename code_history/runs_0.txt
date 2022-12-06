@@ -2428,3 +2428,8 @@ new run: 1670371065.9854028
 format error: None 
 execution error: None 
 accuracy_score(Y_test,Y_hat)
+new run: 1670371148.817282 
+format error: None 
+execution error: None 
+X_test = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y_test = new['DepDel15'].to_numpy()
