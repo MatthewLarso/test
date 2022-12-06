@@ -159,3 +159,24 @@ cr = df.corr()
 cr = cr[cr["DepDel15"] > .05]
 print(cr)
 X = result[['CRSArrTime','CRSDepTime']]
+new run: 1670290574.832947 
+format error: None 
+execution error: name 'train_test_split' is not defined 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = result.corr()
+cr = cr[cr["DepDel15"] > .05]
+print(cr)
+X = result[['CRSArrTime','CRSDepTime']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+
+#classification models will automatically take care of one-versus-all modeling
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = SVC()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
