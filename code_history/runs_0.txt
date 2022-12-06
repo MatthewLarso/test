@@ -686,3 +686,13 @@ ohe = OneHotEncoder(sparse=False)
 
 ohe_airports = ohe.fit_transform(ohe_airports)
 ohe_airports
+new run: 1670301675.510208 
+format error: None 
+execution error: "None of [Index(['OriginAiportID'], dtype='object')] are in the [columns]" 
+from sklearn.preprocessing import OneHotEncoder
+
+ohe_airports = df[['OriginAiportID']].to_numpy()
+ohe = OneHotEncoder(sparse=False)
+
+ohe_airports = ohe.fit_transform(ohe_airports)
+ohe_airports
