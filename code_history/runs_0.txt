@@ -481,3 +481,19 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/training.csv')
 print(df.head())
+new run: 1670297800.7417002 
+format error: None 
+execution error: None 
+result = df.select_dtypes(include='number')
+print(result.head())
+cr = result.corr()
+cr = cr[cr["DepDel15"] > .02]
+print(cr)
+result.dropna(inplace = True)
+X = result[['CRSDepTime','CRSArrTime']].to_numpy()
+Y = result['DepDel15'].to_numpy()
+
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+print(df.shape)
