@@ -575,3 +575,8 @@ new run: 1670298741.342796
 format error: None 
 execution error: None 
 df.columns
+new run: 1670298926.7088919 
+format error: None 
+execution error: None 
+filtered = df.select_dtypes(include='number') 
+filtered.columns
