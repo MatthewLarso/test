@@ -14,3 +14,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv(training.csv)
+new run: 1670288108.486516 
+format error: None 
+execution error: name 'data' is not defined 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv(data/training.csv)
