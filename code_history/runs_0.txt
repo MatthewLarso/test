@@ -607,3 +607,9 @@ filtered = df.select_dtypes(include='number')
 filtered.drop(index = "Year",inplace = True)
 filtered.columns
 filtered.corr()
+new run: 1670299131.4709928 
+format error: None 
+execution error: None 
+filtered = df.select_dtypes(include='number') 
+filtered.columns
+filtered.corr()
