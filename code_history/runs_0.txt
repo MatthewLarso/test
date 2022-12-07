@@ -3719,3 +3719,18 @@ out= (a<.74)*1
 accuracy_score(Y_test,out)
 print(sum(out))
 print(sum(Y_test))
+new run: 1670384334.854403 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort(axis = 0)
+a = Y_prob[:,1]
+print(a)
+print(len(a[a < .74])/len(Y_prob))
+out= (a<.74)*1
+# out = out * 1
+# accuracy_score(Y_test,out)
+print(sum(out))
+print(sum(Y_test))
