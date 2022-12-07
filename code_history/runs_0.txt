@@ -2642,3 +2642,8 @@ execution error: None
 
 X_test = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
 Y_test = new['DepDel15'].to_numpy()
+new run: 1670375798.4170082 
+format error: None 
+execution error: None 
+Y_hat = classifier.predict(X_test)
+accuracy_score(Y_test,Y_hat)
