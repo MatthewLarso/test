@@ -2593,3 +2593,13 @@ new run: 1670373598.6834528
 format error: None 
 execution error: None 
 df2 = pd.read_csv('data/testing_X.csv')
+new run: 1670373710.715391 
+format error: None 
+execution error: None 
+df2 = pd.read_csv('data/testing_X.csv')
+Origin = pd.get_dummies(df2['Origin'],drop_first = True)
+DayOfWeek = pd.get_dummies(df2['DayOfWeek'],drop_first = True)
+DOT = pd.get_dummies(df2['DOT_ID_Operating_Airline'],drop_first = True)
+
+new2 = pd.concat([Origin,DayOfWeek,DOT,df2['CRSDepTime'],df2['CRSArrTime'],df2['CRSElapsedTime']], axis = 1)
+new2.dropna(inplace = True)
