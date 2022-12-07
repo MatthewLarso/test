@@ -3389,3 +3389,12 @@ execution error: None
 Y_prob.sort(axis = 0)
 a = Y_prob[:,1]
 print(a < .6)
+new run: 1670382569.3859808 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort(axis = 0)
+a = Y_prob[:,1]
+print(a[a < .6])
