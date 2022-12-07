@@ -3655,3 +3655,8 @@ format error: None
 execution error: 'numpy.ndarray' object has no attribute 'count' 
 out = (Y_prob[:,0]>0)*1
 out.count()
+new run: 1670383418.78995 
+format error: None 
+execution error: None 
+out = (Y_prob[:,0]>0)*1
+out.sum()
