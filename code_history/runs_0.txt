@@ -3839,3 +3839,18 @@ out= (a<.115)*1
 # accuracy_score(Y_test,out)
 print(sum(out))
 print(sum(Y_test))
+new run: 1670384566.2987552 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort(axis = 0)
+a = Y_prob[:,1]
+print(a[int(len(a)*.20)])
+print(len(a[a < .115])/len(Y_prob))
+out= (a<.115)*1
+# out = out * 1
+accuracy_score(Y_test,out)
+# print(sum(out))
+# print(sum(Y_test))
