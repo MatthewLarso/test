@@ -2636,3 +2636,9 @@ format error: None
 execution error: None 
 Y_hat = classifier.predict(X_test)
 Y_hat.sum()
+new run: 1670375771.520064 
+format error: None 
+execution error: None 
+
+X_test = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y_test = new['DepDel15'].to_numpy()
