@@ -3673,3 +3673,19 @@ new run: 1670384045.976713
 format error: None 
 execution error: None 
 type(out)
+new run: 1670384185.521953 
+format error: None 
+execution error: Only integers accepted as `n` values 
+
+temp = new.sample((len(new)*.5))
+X = temp[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y = temp['DepDel15'].to_numpy()
+X = scale.fit_transform(X) 
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+
+model = LogisticRegression()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
+Y_prob = model.predict_proba(X_test)
