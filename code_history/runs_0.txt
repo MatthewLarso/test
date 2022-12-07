@@ -3101,3 +3101,9 @@ format error: None
 execution error: None 
 print(accuracy_score(Y_test,Y_hat))
 Y_hat.sum()
+new run: 1670379260.600389 
+format error: None 
+execution error: None 
+
+X_test = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y_test = new['DepDel15'].to_numpy()
