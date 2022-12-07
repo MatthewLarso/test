@@ -3224,3 +3224,17 @@ format error: None
 execution error: None 
 print(accuracy_score(Y_test,Y_hat))
 Y_hat.sum()
+new run: 1670382117.9341938 
+format error: None 
+execution error: None 
+
+X = new[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+Y = new['DepDel15'].to_numpy()
+X = scale.fit_transform(X) 
+
+
+model = LogisticRegression()
+model.fit(X_train,Y_train)
+
+Y_hat = model.predict(X_test)
+Y_prob = model.predict_proba(X_test)
