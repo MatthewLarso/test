@@ -3892,3 +3892,10 @@ new run: 1670387767.850131
 format error: None 
 execution error: None 
 out
+new run: 1670387846.002451 
+format error: None 
+execution error: None 
+OUT = pd.DataFrame(out)
+ 
+# save the dataframe as a csv file
+OUT.to_csv("./data/malarson_final_assignment.csv")
