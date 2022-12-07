@@ -2603,3 +2603,12 @@ DOT = pd.get_dummies(df2['DOT_ID_Operating_Airline'],drop_first = True)
 
 new2 = pd.concat([Origin,DayOfWeek,DOT,df2['CRSDepTime'],df2['CRSArrTime'],df2['CRSElapsedTime']], axis = 1)
 new2.dropna(inplace = True)
+new run: 1670373747.4208908 
+format error: None 
+execution error: None 
+bad = new2[20409] | new2[20436] | new2['MDW']
+good = new2[19930] | new2[19690] | new2[19790]
+new2['bad'] = bad
+new2['good'] = good
+
+X_test = new2[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
