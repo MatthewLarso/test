@@ -3416,3 +3416,12 @@ execution error: None
 Y_prob.sort(axis = 0)
 a = Y_prob[:,1]
 print(len(a[a < .7])/len(Y_prob))
+new run: 1670382598.408236 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort(axis = 0)
+a = Y_prob[:,1]
+print(len(a[a < .8])/len(Y_prob))
