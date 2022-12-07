@@ -2446,3 +2446,10 @@ X3 = new[new['DepDel15'] == 1]
 X2 = X2.sample(n = 100000)
 X3 = X3.sample(n = 100000)
 X = pd.concat([X2,X3])
+new run: 1670371271.147346 
+format error: None 
+execution error: None 
+
+Y = X['DepDel15'].to_numpy()
+X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+X = scale.fit_transform(X) 
