@@ -3632,3 +3632,7 @@ new run: 1670383338.434561
 format error: None 
 execution error: None 
 max(Y_prob[:,0])
+new run: 1670383380.719382 
+format error: None 
+execution error: None 
+out.sum()
