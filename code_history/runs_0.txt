@@ -2543,3 +2543,7 @@ new run: 1670371647.282325
 format error: None 
 execution error: None 
 df['DepDel15'].sum()
+new run: 1670371653.2480938 
+format error: None 
+execution error: None 
+df['DepDel15'].sum()/len(df)
