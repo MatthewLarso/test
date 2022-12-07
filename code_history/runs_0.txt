@@ -3258,3 +3258,9 @@ execution error: None
 print(Y_train.max())
 Y_hat.max()
 accuracy_score(Y_test,Y_hat)
+new run: 1670382236.1673758 
+format error: None 
+execution error: None 
+print(Y_train.max())
+Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
