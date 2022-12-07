@@ -3854,3 +3854,19 @@ out= (a<.115)*1
 accuracy_score(Y_test,out)
 # print(sum(out))
 # print(sum(Y_test))
+new run: 1670384696.7958899 
+format error: None 
+execution error: None 
+df2 = pd.read_csv('data/testing_X.csv')
+Origin = pd.get_dummies(df2['Origin'],drop_first = True)
+DayOfWeek = pd.get_dummies(df2['DayOfWeek'],drop_first = True)
+DOT = pd.get_dummies(df2['DOT_ID_Operating_Airline'],drop_first = True)
+
+new2 = pd.concat([Origin,DayOfWeek,DOT,df2['CRSDepTime'],df2['CRSArrTime'],df2['CRSElapsedTime']], axis = 1)
+new2.dropna(inplace = True)
+bad = new2[20409] | new2[20436] | new2['MDW']
+good = new2[19930] | new2[19690] | new2[19790]
+new2['bad'] = bad
+new2['good'] = good
+
+X_test = new2[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
