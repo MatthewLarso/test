@@ -3299,3 +3299,11 @@ execution error: None
 # Y_hat.max()
 # accuracy_score(Y_test,Y_hat)
 print(Y_prob.sort())
+new run: 1670382370.250473 
+format error: unexpected EOF while parsing (3518146409.py, line 5) 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort()
+print(Y_prob
