@@ -3219,3 +3219,8 @@ new run: 1670382001.942355
 format error: None 
 execution error: None 
 Y_hat = classifier.predict(X_test)
+new run: 1670382007.9451761 
+format error: None 
+execution error: None 
+print(accuracy_score(Y_test,Y_hat))
+Y_hat.sum()
