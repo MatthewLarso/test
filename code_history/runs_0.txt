@@ -3645,3 +3645,8 @@ format error: None
 execution error: zero-size array to reduction operation maximum which has no identity 
 out = (Y_prob[:0]>0)*1
 out.max()
+new run: 1670383410.3435378 
+format error: None 
+execution error: None 
+out = (Y_prob[:,0]>0)*1
+out.max()
