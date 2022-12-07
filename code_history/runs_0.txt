@@ -2505,3 +2505,10 @@ execution error: None
 Y = X['DepDel15'].to_numpy()
 X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
 X = scale.fit_transform(X) 
+new run: 1670371494.683861 
+format error: None 
+execution error: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices 
+
+Y = X['DepDel15'].to_numpy()
+X = X[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+X = scale.fit_transform(X) 
