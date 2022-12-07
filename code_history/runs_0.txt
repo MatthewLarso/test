@@ -2631,3 +2631,8 @@ new2['bad'] = bad
 new2['good'] = good
 
 X_test = new2[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+new run: 1670375579.376838 
+format error: None 
+execution error: None 
+Y_hat = classifier.predict(X_test)
+Y_hat.sum()
