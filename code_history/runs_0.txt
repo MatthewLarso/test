@@ -2493,3 +2493,8 @@ format error: None
 execution error: Found input variables with inconsistent numbers of samples: [150000, 200000] 
 classifier = MLPClassifier(hidden_layer_sizes=(150,100,50), max_iter=300,activation = 'relu',solver='adam',random_state=1)
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
+new run: 1670371476.8580558 
+format error: None 
+execution error: Found input variables with inconsistent numbers of samples: [150000, 200000] 
+classifier = MLPClassifier(hidden_layer_sizes=(150,100,50), max_iter=300,activation = 'relu',solver='adam',random_state=1)
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
