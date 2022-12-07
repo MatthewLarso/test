@@ -3453,3 +3453,13 @@ Y_prob.sort(axis = 0)
 a = Y_prob[:,1]
 print(len(a[a < .74])/len(Y_prob))
 Y_prob[0]
+new run: 1670382651.77205 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob.sort(axis = 0)
+a = Y_prob[:,1]
+print(len(a[a < .74])/len(Y_prob))
+Y_hat[0]
