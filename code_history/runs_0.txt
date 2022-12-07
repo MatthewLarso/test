@@ -2823,3 +2823,11 @@ format error: None
 execution error: None 
 accuracy_score(Y_test,Y_hat)
 Y_hat.sum()
+new run: 1670376554.592111 
+format error: None 
+execution error: None 
+X2 = new[new['DepDel15'] == 0]
+X3 = new[new['DepDel15'] == 1]
+X2 = X2.sample(n = 100000)
+X3 = X3.sample(n = 34000)
+X = pd.concat([X2,X3])
