@@ -2488,3 +2488,8 @@ X3 = new[new['DepDel15'] == 1]
 X2 = X2.sample(n = 100000)
 X3 = X3.sample(n = 50000)
 X = pd.concat([X2,X3])
+new run: 1670371441.41262 
+format error: None 
+execution error: Found input variables with inconsistent numbers of samples: [150000, 200000] 
+classifier = MLPClassifier(hidden_layer_sizes=(150,100,50), max_iter=300,activation = 'relu',solver='adam',random_state=1)
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33)
