@@ -3611,3 +3611,8 @@ new2['bad'] = bad
 new2['good'] = good
 
 X_test = new2[['bad','good','CRSDepTime','CRSArrTime']].to_numpy()
+new run: 1670383055.373413 
+format error: None 
+execution error: None 
+Y_prob = model.predict_proba(X_test)
+out = (Y_prob[:,1]<.74)*1
