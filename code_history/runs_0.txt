@@ -2937,3 +2937,13 @@ new run: 1670377018.8596349
 format error: None 
 execution error: None 
 Y_hat.sum()
+new run: 1670377085.9500659 
+format error: None 
+execution error: None 
+df2 = pd.read_csv('data/testing_X.csv')
+Origin = pd.get_dummies(df2['Origin'],drop_first = True)
+DayOfWeek = pd.get_dummies(df2['DayOfWeek'],drop_first = True)
+DOT = pd.get_dummies(df2['DOT_ID_Operating_Airline'],drop_first = True)
+
+new2 = pd.concat([Origin,DayOfWeek,DOT,df2['CRSDepTime'],df2['CRSArrTime'],df2['CRSElapsedTime']], axis = 1)
+new2.dropna(inplace = True)
