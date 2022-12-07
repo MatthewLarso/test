@@ -3616,3 +3616,7 @@ format error: None
 execution error: None 
 Y_prob = model.predict_proba(X_test)
 out = (Y_prob[:,1]<.74)*1
+new run: 1670383107.835041 
+format error: None 
+execution error: None 
+out.sum()
