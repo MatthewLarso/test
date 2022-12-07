@@ -3315,3 +3315,11 @@ execution error: None
 # accuracy_score(Y_test,Y_hat)
 Y_prob.sort()
 print(Y_prob)
+new run: 1670382401.445524 
+format error: None 
+execution error: None 
+# print(Y_train.max())
+# Y_hat.max()
+# accuracy_score(Y_test,Y_hat)
+Y_prob[:1].sort()
+print(Y_prob)
